@@ -1,0 +1,10 @@
+@import "../../App.css";
+
+.button {
+  font: inherit;
+  color: white;
+  padding: 0.75em 3em;
+  border-radius: 100vw;
+  background-color: var(--pastelLilac);
+  cursor: pointer;
+}
