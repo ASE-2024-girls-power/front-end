@@ -1,0 +1,60 @@
+@import "../../App.css";
+
+.hero-background {
+  margin-top: 66px;
+  position: relative;
+  height: calc(100vh - 66px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-background::before {
+  position: absolute;
+  content: "";
+  background: url("../../Assets/background-md.png") top/cover no-repeat;
+  opacity: 0.75;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+.hero-container {
+  aspect-ratio: 1.025/1;
+  padding: 2.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 67.5vh;
+  left: calc((100vw - 67.5vh) / 2);
+  margin-bottom: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  color: white;
+  font-size: 1.75rem;
+  font-style: italic;
+}
+
+@media (min-aspect-ratio: 1374/960) {
+  .hero-container {
+    position: absolute;
+    width: 49.5vw;
+    top: 4.95vw;
+    left: calc((100vw - 49.5vw) / 2);
+    max-height: calc((100vh - 66px) - 4.95vw);
+  }
+}
+
+.hero-btn-container {
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
