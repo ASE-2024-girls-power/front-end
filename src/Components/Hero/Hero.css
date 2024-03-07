@@ -12,7 +12,7 @@
 .hero-background::before {
   position: absolute;
   content: "";
-  background: url("../../Assets/heroBackground.jpg") top left/cover no-repeat;
+  background: url("../../Assets/background-md.png") top/cover no-repeat;
   opacity: 0.75;
   top: 0px;
   bottom: 0px;
@@ -22,26 +22,31 @@
 }
 
 .hero-container {
-  aspect-ratio: 1.035/1;
+  aspect-ratio: 1.025/1;
   padding: 2.5em;
-  background-color: rgba(0, 0, 0, 0.25);
-  position: absolute;
-  top: 8.75vh;
-  left: 50.75vh;
-  width: 63.5vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 67.5vh;
+  left: calc((100vw - 67.5vh) / 2);
+  margin-bottom: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-text {
   color: white;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-style: italic;
 }
 
-@media (min-aspect-ratio: 1726/1024) {
+@media (min-aspect-ratio: 1374/960) {
   .hero-container {
-    width: 40vw;
-    top: 5.35vw;
-    left: 31.8vw;
+    position: absolute;
+    width: 49.5vw;
+    top: 4.95vw;
+    left: calc((100vw - 49.5vw) / 2);
+    max-height: calc((100vh - 66px) - 4.95vw);
   }
 }
 

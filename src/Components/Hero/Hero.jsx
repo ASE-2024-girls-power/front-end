@@ -8,8 +8,8 @@ export const Hero = () => {
       <div className="hero-container">
         <div className="hero-text">Create and Share Your Stories</div>
         <div className="hero-btn-container">
-          <Button text="Sign In" />
           <Button text="Sign Up" />
+          <Button text="Sign In" />
         </div>
       </div>
     </header>
