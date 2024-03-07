@@ -1,6 +1,108 @@
-.navbar {
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    gap:1rem
+@import "../../App.css";
+
+.nav-center {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.nav-header {
+  height: 66px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  height: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.img-container a {
+  display: block;
+  text-decoration: none;
+  color: var(--chambrayBlue);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 33px;
+  font-weight: 800;
+}
+
+/* .nav-header .img-container img {
+  height: 66px;
+} */
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-icon {
+  font-size: 2.5rem;
+  stroke-width: 0.5;
+  color: var(--chambrayBlue);
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  color: var(--chambrayBlue);
+  transition: var(--mainTransition);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 0.25rem solid var(--chambrayBlue);
+}
+
+.show-nav {
+  height: 99px;
+  z-index: 1;
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-btn:nth-child(1) {
+    display: none;
+  }
+  .nav-center {
+    max-width: 1170px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .nav-header {
+    width: 75%;
+  }
+  .nav-links {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
 }
