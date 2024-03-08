@@ -104,8 +104,8 @@ const PasswordErrorMessage = () => {
               </select> 
             </div> 
             <button type="submit" disabled={!getIsFormValid()}> 
-              Create account 
-            </button> 
+            Create account
+            </button>
           </fieldset> 
         </form> 
       </div> 
