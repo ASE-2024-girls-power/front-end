@@ -3,11 +3,20 @@
 .RegistrationForm {
     display: flex;
     flex: 1;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     /*margin-top: 66px;*/
     background: url("../../Assets/background-md.png") top/cover no-repeat;
+    opacity: 0.75;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    margin-top: 66px;
+    position: relative;
+    height: calc(100vh - 66px);
+    justify-content: center;
   }
   
   fieldset {
