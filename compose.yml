@@ -1,0 +1,43 @@
+# TODO: Add configuration for starting frontend and backend images
+# Possible good tutorial: https://www.milanwittpohl.com/projects/tutorials/full-stack-web-app/dockerizing-our-front-and-backend
+
+version: '3'
+services:
+  #  backend:
+  #    build: ../back-end
+  #    ports:
+  #      - "5000:5000"
+  #    env_file:
+  #      - env.localstack
+  #    volumes:
+  #      - ./backend/sTC:/app
+  frontend:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.localstack
+    volumes:
+      - ./front-end/public:/app/public
+      - ./front-end/src:/app/src
+
+  localstack:
+    container_name: 'localstack'
+    image: localstack/localstack
+    ports:
+      - "4566:4566"
+      - "4510-4559:4510-4559"
+    environment:
+      - SERVICES=s3
+      - DEBUG=1
+      - _LAMBDA_EXECUTOR=${LAMBDA_EXECUTOR-}
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - SKIP_SSL_CERT_DOWNLOAD=1
+      - SKIP_INFRA_DOWNLOADS=1
+      - DISABLE_EVENTS=1
+      - AWS_REGION=us-east-1
+      - AWS_ACCESS_KEY_ID=test
+      - "AWS_SECRET_ACCESS_KEY=test"
+    volumes:
+      - "/volume:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
