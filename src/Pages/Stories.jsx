@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
+import { Group } from "../Components/Group/Group";
 
 export const Stories = () => {
   return (
-    <div>Stories</div>
-  )
-}
-
+    <div>
+      <Group />
+    </div>
+  );
+};

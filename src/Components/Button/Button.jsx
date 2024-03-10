@@ -1,6 +1,6 @@
 import React from "react";
-import "./Button.css"
+import "./Button.css";
 
 export const Button = (props) => {
-  return <div className="button">{props.text}</div>;
+  return <div className="primary-button">{props.text}</div>;
 };
