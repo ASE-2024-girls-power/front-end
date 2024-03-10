@@ -3,7 +3,6 @@ import "./Navbar.css";
 import { NavLink, Outlet } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiMenuKebab } from "react-icons/ci";
-import logo from "../../Assets/logo.jpg";
 
 export default class Navbar extends Component {
   state = {

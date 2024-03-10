@@ -9,6 +9,7 @@
   flex-direction: column;
   z-index: 1;
   background-color: white;
+  padding: 0 1rem;
 }
 
 .nav-header {
@@ -22,6 +23,7 @@
 .btn-container {
   display: flex;
   gap: 1rem;
+  flex-basis: min-content;
   justify-content: center;
   align-items: center;
 }
@@ -41,10 +43,6 @@
   font-size: 33px;
   font-weight: 800;
 }
-
-/* .nav-header .img-container img {
-  height: 66px;
-} */
 
 .nav-btn {
   background: transparent;
