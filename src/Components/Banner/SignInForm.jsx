@@ -11,7 +11,7 @@ const SignInForm = () => {
     e.preventDefault();
     if (input.username !== "" && input.password !== "") {
       alert("You have been logged in");
-      //TODO: Send user to stories page and show them as logged in in the corner
+      //TODO: Send user to stories page and show them as logged in in the corner  
     }
     else 
     {
