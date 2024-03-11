@@ -1,11 +1,11 @@
-import React from 'react';
-import RegistrationForm from '../Components/Registration/RegistrationForm';
+import React from "react";
+import { Hero } from "../Components/Hero/Hero";
+import RegistrationForm from "../Components/Banner/RegistrationForm";
 
 export const Registration = () => {
   return (
-    <div>
-    <RegistrationForm/>
-
-    </div>
-  )
-}
+    <Hero>
+      <RegistrationForm />
+    </Hero>
+  );
+};

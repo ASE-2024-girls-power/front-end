@@ -1,0 +1,113 @@
+@import "../../App.css";
+
+.banner-container {
+  aspect-ratio: 1.04/1;
+  padding: 2.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 68vh;
+  left: calc((100vw - 67.5vh) / 2);
+  margin-bottom: 14.5vh;
+  box-shadow: var(--lightShadow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  color: white;
+  font-size: 1.75rem;
+  font-style: italic;
+}
+
+@media (min-aspect-ratio: 1614/960) {
+  .banner-container {
+    position: absolute;
+    width: 42.5vw;
+    top: 3.45vw;
+    left: calc((100vw - 42.5vw) / 2);
+  }
+}
+
+.banner-btn-container {
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.RegistrationForm {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+
+.RegistrationForm label {
+  font-size: 0.75rem;
+  margin-bottom: 0.25em;
+}
+
+.RegistrationForm sup {
+  color: red;
+  top: -0.25em;
+  font-size: 0.6rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.RegistrationForm input,
+select {
+  font-size: 0.75rem;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+}
+
+.Field {
+  position: relative;
+  padding-bottom: 1.25em;
+  display: flex;
+  flex-direction: column;
+}
+
+.FieldError {
+  font-size: 0.75rem;
+  color: red;
+  position: absolute;
+  bottom: -0.05em;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.RegistrationForm button {
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.75em;
+  width: 50%;
+  border-radius: 0.5em;
+  border: 1px solid #ccc;
+  background-color: var(--pastelLilac);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.RegistrationForm button:disabled,
+.RegistrationForm button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}

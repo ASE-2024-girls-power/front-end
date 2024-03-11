@@ -1,0 +1,22 @@
+@import "../../App.css";
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.stories h1 {
+  display: flex;
+  height: 66px;
+  justify-content: center;
+  align-items: center;
+}
+
+.stories-grid {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
