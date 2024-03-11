@@ -11,6 +11,7 @@ const SignInForm = () => {
     e.preventDefault();
     if (input.username !== "" && input.password !== "") {
       alert("You have been logged in");
+      //TODO: Send user to stories page and show them as logged in in the corner
     }
     else 
     {
@@ -29,7 +30,8 @@ const SignInForm = () => {
   return (
     <form className="banner-container" onSubmit={handleLoginEvent}>
         <fieldest className="RegistrationForm">
-      <div className="Field">
+        <h2>Sign In</h2>
+        <div className="Field">
         <label htmlFor="username">Username:</label>
         <input
           type="username"
