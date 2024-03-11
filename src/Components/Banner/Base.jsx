@@ -11,7 +11,9 @@ export const Base = () => {
         <NavLink to="/registration">
           <Button text="Sign Up" />
         </NavLink>
-        <Button text="Sign In" />
+        <NavLink to="/signin">
+          <Button text="Sign In" />
+        </NavLink>
       </div>
     </div>
   );
