@@ -1,8 +1,11 @@
 import { useState } from "react";
 import "./Banner.css";
+import { useNavigate } from "react-router-dom";
+
 
 const SignInForm = () => {
-  const [input, setInput] = useState({
+    const navigate = useNavigate();
+    const [input, setInput] = useState({
     username: "",
     password: "",
   });
@@ -11,6 +14,7 @@ const SignInForm = () => {
     e.preventDefault();
     if (input.username !== "" && input.password !== "") {
       alert("You have been logged in");
+      navigate("/stories");
       //TODO: Send user to stories page and show them as logged in in the corner  
     }
     else 
