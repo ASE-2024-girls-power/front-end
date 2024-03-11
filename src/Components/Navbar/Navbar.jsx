@@ -47,7 +47,7 @@ export default class Navbar extends Component {
               <NavLink to="/registration">Sign Up</NavLink>
             </li>
             <li>
-              <NavLink to="/registration">Sign in</NavLink>
+              <NavLink to="/signin">Sign in</NavLink>
             </li>
           </ul>
         </div>
